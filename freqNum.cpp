@@ -7,7 +7,7 @@
 using namespace std;
 
 //the function to find the frequency
-int mostFreq(int arr[], int arraySize){
+int mostFreq(int* arr, int arraySize){
 
   sort(arr, arr + arraySize); //Sort the array
 
