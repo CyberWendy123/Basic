@@ -10,7 +10,18 @@ using namespace std;
 
 int main(){
 
-	int arr[] = {-20, -5, 7, -12, 11, 25, 23, 2, 4, 5, 1, 16, 8, 9, -9, -23, -3, -13, -24, 3, 5, -18, 20, -12, -25}; 
+	int arr[] = {-11, -10, 0, 3, 5, -3, 13, 5, 10, 2, 6, 1, 12, -4, 8}; 
+	int count; 
+
+	for(int i = 0; i < sizeof(arr)/sizeof(arr[0]) ; i++){
+		for(int j = 1; j < sizeof(arr)/sizeof(arr[0]); j++){
+			if((arr[i]+arr[j]) == 10)
+				count++; 
+		}
+	}
+	cout << count/2 << endl; 
+
+	//vs doing this in linear time - aka only having one array 
 
 	return 0; 
 }
